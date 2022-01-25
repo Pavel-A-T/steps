@@ -35,7 +35,6 @@ function Form() {
 
     const handleSubmit = evt => {
         evt.preventDefault();
-        console.log(form.date)
         if (!form.date || !form.km) return;
         form.date = parseDate(form.date);
         setRecords(prevRecords => {
